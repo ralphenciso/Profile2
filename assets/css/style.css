@@ -12,7 +12,7 @@
 body {
 	position: relative;
 	background: snow;
-	background-image: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)), url('../images/bg1.jpg');
+	background-image: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)), url('../images/bg1-resized.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -211,7 +211,7 @@ body {
 }
 
 
-.abtmeText span + span {
+.abtmeText p + p {
 	display: inline-block;
 	margin-top: 1rem;
 }
@@ -272,6 +272,7 @@ body {
 	
 }
 
+
 @media (min-width: 768px) and (max-height: 780px) {
 
 	.abtme:hover, .abtme:hover ~ .skills {
@@ -282,14 +283,14 @@ body {
 
 
 
-
-
-
-
-
 /* about me end */
 
 
+
+/* skills styling */
+
+
+/* skills end */
 
 
 
