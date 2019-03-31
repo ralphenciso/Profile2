@@ -342,6 +342,11 @@ body {
 		transition: opacity .3s ease-in;
 	}
 
+
+	.skills:hover {
+		background: 
+	}
+
 	.skills:hover h3 {
 		opacity: 0;
 	}
