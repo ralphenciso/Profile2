@@ -120,7 +120,7 @@ body {
 .contents {
 	flex-flow: column nowrap;
 	justify-content: space-around;
-	align-items: center;
+	align-items: stretch;
 	margin-top: 20px;
 }
 
@@ -356,8 +356,6 @@ body {
 	}
 
 
-
-
 }
 
 
@@ -367,11 +365,70 @@ body {
 
 
 
+/* projects */
+
+.projects .pHeader {
+	padding:  5px 0;
+	background: #33bb5580;
+}
+
+
+.projecticons {
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	width: 80%;
+	margin: 8px auto;
+	height: 30px;
+}
+
+
+.iconContainer {
+	flex: 1 0 20%;
+	height: 100%;
+}
+
+
+.iconContainer * {
+	height: 100%;
+	width: 30px;
+	color: #f0f0f0aa;
+}
+
+
+
+.pItem {
+	width: calc(100% - 40px);
+	height: calc(100% - 120px);
+	margin: 10px auto;
+	border: 1px solid snow;
+	border-radius: 5px;
+}
+
+.lhub {
+	background-image: url("../images/Lhub.png");
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
 
 
 
 
 
+
+
+
+/* projects end */
+
+
+
+.exp h3, .contact h3 {
+	position: absolute;
+	width: 100%;
+	top: calc(50% - 11.5px);
+
+}
 
 
 
