@@ -34,6 +34,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	min-height: 100vh;
+	z-index: 1;
 }
 
 
@@ -254,6 +255,7 @@ body {
 	.abtme:hover {
 		flex-basis: 464px; /* content height, need to spcify for animation*/
 		transition: all .3s ease-in;
+		border-color: rgba(14,20,95,1);
 	}
 
 
@@ -342,9 +344,8 @@ body {
 		transition: opacity .3s ease-in;
 	}
 
-
-	.skills:hover {
-		background: 
+	.skills:hover{
+		border-color: #ffeb0080;
 	}
 
 	.skills:hover h3 {
@@ -372,6 +373,12 @@ body {
 	background: #33bb5580;
 }
 
+.pItemTitle {
+	border-top: 2px solid #ca7e7e;
+	border-bottom: 2px solid #ca7e7e;
+	display: inline-block;
+	margin: 0 auto;
+}
 
 .projecticons {
 	display:flex;
@@ -382,6 +389,9 @@ body {
 	height: 30px;
 }
 
+.lh {
+	transform: scale(1.4);
+}
 
 .iconContainer {
 	flex: 1 0 20%;
@@ -401,7 +411,7 @@ body {
 	width: calc(100% - 40px);
 	height: calc(100% - 120px);
 	margin: 10px auto;
-	border: 1px solid snow;
+	border: 1px solid #ca7e7e;
 	border-radius: 5px;
 }
 
@@ -433,19 +443,109 @@ body {
 
 
 
+/* easter egg */
+
+
+
+#ee {
+	position: fixed;
+	left: 15px;
+	top: 15px;
+	font-size: 2rem;
+	font-family: monospace;
+	color: snow;
+	z-index: 500;
+}
+
+#cbar {
+	animation: blink 1s step-end infinite;
+}
+
+.rarrow {
+	margin: 0;
+	padding: 0;
+	color:snow;
+	transform: translateX(6px);
+	display: inline;
+	height: 1.4rem;
+}
+
+.hide {
+	display:none;
+}
+
+
+@keyframes blink {
+	to,from {color: transparent}
+	50% {color: snow}
+}
 
 
 
 
 
+.burn {
+	background-image: url('../images/explosion.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.thunder {
+	background-image: url('../images/thunder.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.circles {
+	background-image: url('../images/circles.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.fall {
+	animation: fall 1.2s ease-in forwards;
+}
+
+@keyframes fall {
+	50% {transform-origin: left top; transform: rotate(25deg)}
+	100% {transform: translateY(100%)}
+}
 
 
 
+.burn > *, .circles > *{
+	opacity: 0;
+}
+
+.pacman {
+	position: absolute;
+	top: -10vh;
+	height: 120vh;
+	width:calc(100vw + 120vh);
+	z-index: 100;
+	left: calc(-100% - 180vh);
+	transition: all 3s linear;
+	text-align: right;
+
+	background-image: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)), url('../images/bg1-resized.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.pacman img {
+	height: 100%;
+	transform: translateX(50%);
+	
+}
 
 
-
-
-
+.movepacman {
+	left: 0;
+}
 
 
 
