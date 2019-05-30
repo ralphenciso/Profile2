@@ -9,6 +9,9 @@ window.onload = function init() {
     var container = document.querySelector('#container');
     var pacman = document.querySelector('.pacman');
 
+    var projicons = document.querySelectorAll('.iconContainer');
+    var projects = document.querySelectorAll('.pcont')
+
     dev.addEventListener('click', function(evt) {
         arrow.classList.toggle('hide');
         state = !arrow.classList.contains('hide');    
@@ -49,6 +52,20 @@ window.onload = function init() {
            }
        }
        
+
+       projicons.forEach(icon => {
+            icon.addEventListener('click', function(){
+
+                projects.forEach(proj => {
+                    if(proj.id !== icon.dataset.target){
+                        proj.classList.add('dnone');
+                    } else {
+                        proj.classList.remove('dnone');
+                    }
+                })
+
+            })
+        });
 
 
 }

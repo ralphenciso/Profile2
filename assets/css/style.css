@@ -556,13 +556,19 @@ body {
 }
 
 
-.pcont {
+.pcont{
+	display: inline;
+	opacity: 1;
+}
+
+
+
+.dnone {
 	display: none;
 }
 
-.pcont:target {
-	display: inline;
-}
+
+
 
 
 
