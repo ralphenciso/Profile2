@@ -1,4 +1,4 @@
-
+@import 'components/carousel';
 
 
 /*Resets*/
@@ -415,16 +415,12 @@ body {
 	border-radius: 5px;
 }
 
-.lhub {
-	background-image: url("../images/Lhub.png");
-	background-size: cover;
-	background-position: top center;
-	background-repeat: no-repeat;
+.pItemContainer {
+	display: none;
 }
 
-
-.luvel {
-	background-image: linear-gradient(#00000060,#00000060),url("../images/luvel.png");
+.lhub {
+	background-image: url("../images/Lhub.png");
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
@@ -556,13 +552,7 @@ body {
 }
 
 
-.pcont {
-	display: none;
-}
 
-.pcont:target {
-	display: inline;
-}
 
 
 
