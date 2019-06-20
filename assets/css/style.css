@@ -430,6 +430,13 @@ body {
 	background-repeat: no-repeat;
 }
 
+.hnm{
+	background-image: linear-gradient(#00000060,#00000060),url("../images/hm.png");
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
 
 
 
@@ -567,6 +574,9 @@ body {
 	display: none;
 }
 
+.iconContainer img{
+	cursor: pointer;
+}
 
 
 
